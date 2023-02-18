@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'cat a2.cpp'
-                //error 'Pipeline Failed' 
+                // sh 'cat a2.cpp'
+                error 'Pipeline Failed' 
             }
         }
     }
