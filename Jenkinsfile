@@ -8,12 +8,13 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'cat a2.cpp'
+                sh './finaloutput'
+                
             }
         }
         stage('Deploy') { 
             steps {
-                sh './finaloutput'
+                sh 'cat a2.cpp'
                 //error 'Pipeline Failed' 
             }
         }
